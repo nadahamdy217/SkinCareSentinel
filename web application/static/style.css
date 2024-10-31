@@ -1,0 +1,193 @@
+
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(9,0,77,0.65),rgba(9,0,77,0.65)),url(images/q.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.logo {
+    width: 180px;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    width: 100%;
+    text-align: right;
+    padding-right: 60px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 50px;
+    background: #f5168d;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+    transform: translate(-5px, -5px);
+}
+
+.content {
+    margin-top: 14%;
+    color: #fff;
+    max-width: 620px;
+}
+
+.content h1 {
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 85px;
+    margin-bottom: 25px;
+}
+
+.content form {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 5px;
+    padding-top: 10px;
+    margin-top: 30px;
+    transform: translate(-5px, -5px);
+}
+
+.content form input {
+    border: 0;
+    outline: 0;
+    width: 100%;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.filter-container {
+    margin-top: 20px; /* Space above the filter container */
+    color: #fff; /* Text color */
+}
+
+.filter-container h2 {
+    font-size: 20px; /* Title size */
+    margin-bottom: 15px; /* Space below title */
+}
+
+.filter-container select {
+    border: 1px solid #ccc; /* Light border for inputs */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding inside inputs */
+    margin-right: 10px; /* Space between inputs */
+    flex: 1; /* Grow to fill space */
+}
+
+.filter-container button {
+    padding: 10px 20px; /* Button padding */
+    background: #f5168d; /* Button color */
+    color: #fff; /* Button text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+}
+
+.filter-container button:hover {
+    background: #d91377; /* Darker shade on hover */
+}
+
+#results {
+    margin-top: 20px; /* Space above results */
+    display: flex; /* Flexbox for displaying results */
+    flex-direction: column; /* Stack results vertically */
+    align-items: center; /* Center results */
+}
+
+.product-item {
+    background-color: rgba(255, 255, 255, 0.8); /* Light transparent background for product items */
+    padding: 15px; /* Padding inside product items */
+    margin-bottom: 10px; /* Space below product items */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    width: 100%; /* Full width for product items */
+    max-width: 400px; /* Max width for product items */
+}
+/* Comment Box Styles */
+.comment-box {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly opaque white background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    padding: 20px; /* Padding inside the comment box */
+    margin: 20px auto; /* Center the comment box */
+    max-width: 500px; /* Limit the maximum width */
+}
+
+.comment-box h2 {
+    text-align: center; /* Center the heading */
+    color: #333; /* Dark color for contrast */
+}
+
+.comment-box form {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack inputs vertically */
+}
+
+.comment-box input[type="text"],
+.comment-box input[type="email"],
+.comment-box textarea {
+    margin: 10px 0; /* Margin between inputs */
+    padding: 10px; /* Padding inside inputs */
+    border: 1px solid #ccc; /* Light border color */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Increase font size */
+}
+
+.comment-box textarea {
+    min-height: 100px; /* Set a minimum height for textarea */
+    resize: vertical; /* Allow vertical resizing only */
+}
+
+.comment-box button {
+    background-color: #f5168d; /* Button color */
+    color: #fff; /* White text color */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Padding inside button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.comment-box button:hover {
+    background-color: #d91377; /* Darker shade on hover */
+}
+
+.comment-box h3 {
+    text-align: center; /* Center sentiment feedback */
+    color: #28a745; /* Success color for sentiment feedback */
+}
